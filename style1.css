@@ -18,8 +18,8 @@
         "sec3 sec3 sec3 sec3 main main main main main main"
         "sec3 sec3 sec3 sec3 extra extra extra extra extra extra"
         "sec3 sec3 sec3 sec3 extra extra extra extra extra extra"
-        "related-images related-images related-images related-images related-images related-posts related-posts related-posts related-posts related-posts"
-        "related-images related-images related-images related-images related-images related-posts related-posts related-posts related-posts related-posts"
+        "images images images images images posts posts posts posts posts"
+        "images images images images images posts posts posts posts posts"
         "foot foot foot foot foot foot foot foot foot foot";
 }
 
@@ -73,7 +73,7 @@ main:nth-of-type(2) {
 }
 
 aside:nth-of-type(1) {
-    grid-area: related-images;
+    grid-area: images;
     background-color: #7598b7;
     padding: 15px;
     border: 2px solid #ccc;
@@ -83,7 +83,7 @@ aside:nth-of-type(1) {
 }
 
 aside:nth-of-type(2) {
-    grid-area: related-posts;
+    grid-area: posts;
     background-color: #8a2c6c;
     padding: 15px;
     border: 1px solid #ccc;
