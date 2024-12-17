@@ -1,65 +1,68 @@
-.page{
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
+body {
+    background-color: #BEE4F1;
 }
 
-.page{
-    height: 100vh;
-     gap: 10px;
-    background-color:rgb(59, 215, 246);
+.container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-    "header header header header header"
-    "side side main main main"
-    "side side main main main"
-    "side side main main main "
-    "foot foot foot foot foot"
-}
-
-header{
-    grid-area: header;
-    background-color: rgb(103, 233, 233);
-    padding: 10px;
+    height: 600px;
+    width: 800px;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: 40px auto 40px; 
+    gap: 20px;
+    color: white;
+  }
+  
+  header {
+    background-color: #02B9AB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / span 7; 
+    grid-row: 1; 
+  }
+  
+  aside {
+    background-color: #6BD46B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / span 2; 
+    grid-row: 2; 
+  }
+  
+  article {
+    background-color: #F3AA4A;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     text-align: center;
-    font-weight: bold;
-    border: 2px solid #ccc;
-}
-
-aside{
-    grid-area: side;
-    background-color: rgb(102, 198, 102);
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #ccc;
-}
-
-main{
-    grid-area: main;
-    background-color: orange;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #ccc;
-}
-
-.imge{
-    grid-area: img;
-    background-color: rgb(244, 208, 65);
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #ccc;
-}
-
-footer{
-    grid-area: foot;
-    background-color: rgb(103, 233, 233);
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #ccc;
-}
+    grid-column: 3 / span 5; 
+    grid-row: 2; 
+  }
+  
+  footer {
+    background-color: #02B9AB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / span 7; 
+    grid-row: 3; 
+  }
+  
+  .images {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    grid-column: 1 / span 4; 
+    grid-row: 2; 
+  }
+  
+  .images div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: #F4CB48;
+  }
+  
